@@ -13,7 +13,7 @@ interface HeaderProps {
   className?: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ childern, className }) => {
+const Header: React.FC<HeaderProps> = ({ children, className }) => {
   const router = useRouter();
   const handleLogout = () => { };
   return (
@@ -62,7 +62,7 @@ const Header: React.FC<HeaderProps> = ({ childern, className }) => {
           </>
         </div>
       </div>
-      {childern}
+      {children}
     </div>
   );
 };
